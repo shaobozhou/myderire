@@ -40,6 +40,7 @@ class Main extends eui.UILayer {
     private hf = "href"
     public keystr = "ret"
     public sockprot;
+    public userId: string;  // 添加 userId 属性声明
     public loadreadin = false
     static stopMusic = 1;
     static type_sound = 0;
@@ -48,6 +49,7 @@ class Main extends eui.UILayer {
     static play_Interval = [];
     static retryCounts = [];
     static MAX_RETRIES = 20;
+    private socket
     public UserMain: UserMain;
     protected createChildren() {
         super.createChildren();
@@ -126,6 +128,98 @@ class Main extends eui.UILayer {
         window.onerror = delerr
     }
 
+    public connectWebSocket() {
+        const wsUrl = `ws://你的服务器域名:3000`; // 需与后台一致
+        this.socket = new WebSocket(wsUrl);
+        this.socket.onopen = () => {
+            console.log('WebSocket 连接成功');
+            // 登录验证（使用之前获取的 userId）
+            this.socket.send(JSON.stringify({
+                type: 'login',
+                userId: this.userId // 从微信登录接口获取
+            }));
+        };
+
+        this.socket.onmessage = (event) => {
+            const msg = JSON.parse(event.data);
+            this.handleSocketMessage(msg); // 处理服务端消息
+        };
+    }
+
+    public async wechatLogin() {
+        try {
+            // 添加类型断言
+            const loginRes = await new Promise<any>((resolve, reject) => {
+                wx.login({
+                    success: (res) => resolve(res),
+                    fail: (err) => reject(err)
+                });
+            });
+
+            const code = loginRes.code;
+            if (!code) {
+                throw new Error('获取微信code失败');
+            }
+
+            // 添加类型声明
+            const serverRes = await this.requestBackendLogin(code) as ServerResponse<{ userId: string }>;
+
+            if (serverRes.code === 0 && serverRes.data) {
+                this.userId = serverRes.data.userId;
+                console.log('微信登录成功，userId：', this.userId);
+                this.connectWebSocket();
+            } else {
+                throw new Error(`后台登录失败：${serverRes.message || '未知错误'}`);
+            }
+        } catch (error) {
+            console.error('微信登录异常：', error);
+            wx.showToast({
+                title: '登录失败',
+                icon: 'none'
+            });
+        }
+    }
+
+    private async requestBackendLogin(code: string): Promise<ServerResponse<{ userId: string }>> {
+        const backendUrl = 'https://your-server.com/api/wechat/login';
+
+        return new Promise<ServerResponse<{ userId: string }>>((resolve) => {
+            wx.request({
+                url: backendUrl,
+                method: 'POST',
+                data: { code } as WechatLoginParams,
+                header: { 'Content-Type': 'application/json' },
+                success: (res) => {
+                    // 添加类型断言
+                    const data = res.data as ServerResponse<{ userId: string }>;
+                    resolve(data);
+                },
+                fail: (err) => {
+                    resolve({
+                        code: 1,
+                        message: '接口请求失败',
+                        error: err.errMsg
+                    } as ServerResponse<{ userId: string }>);
+                }
+            });
+        });
+    }
+
+    private handleSocketMessage(msg: WebSocketMessage) {
+        switch (msg.type) {
+            case 'loginSuccess':
+                this.UserMain = new UserMain(this);
+                this.stage.addChild(this.UserMain);
+                break;
+            case 'playerJoined':
+                // 处理玩家加入
+                console.log('新玩家加入:', msg.data);
+                break;
+            default:
+                console.log('未知消息类型:', msg.type);
+        }
+    }
+
     static PlaySound(sound_mp3, musicT = 0) {
         if (!Setting.yinxiao || !Main.stopMusic) return;
         const soundUrlDrct = RES.getRes(sound_mp3);
@@ -134,8 +228,8 @@ class Main extends eui.UILayer {
             if (sound_mp3.indexOf("/") != -1) {
                 soundUrl = sound_mp3
             } else {
-                return console.log("错误音频:",sound_mp3);
-                
+                return console.log("错误音频:", sound_mp3);
+
             }
         } else {
             soundUrl = soundUrlDrct.url
@@ -143,7 +237,7 @@ class Main extends eui.UILayer {
 
         let audio;
         if (musicT == 1) {
-            if(Setting.yinyueh == 0) {
+            if (Setting.yinyueh == 0) {
                 return
             }
             audio = document.getElementById("backmusic");
@@ -155,7 +249,7 @@ class Main extends eui.UILayer {
             audio.loop = true
             audio.volume = Setting.yinyueh / 10
         } else {
-            if(Setting.yinxiaoh == 0) {
+            if (Setting.yinxiaoh == 0) {
                 return
             }
             audio = new Audio();
@@ -254,7 +348,7 @@ class Main extends eui.UILayer {
 
     private async loadResource() {
         this.param = {};
-        
+
         var paramStrs = location.search.substr(1).split("&");
         for (var i = 0; i < paramStrs.length; i++) {
             var k = paramStrs[i].split("=")[0];
@@ -290,24 +384,7 @@ class Main extends eui.UILayer {
         //10190
         this.sockprot = parseInt("7v2", 36);
         this.stage.addChild(this.loadingView);
-        var g_c = this.get_c("openid")
-        if (!g_c) {
-            if (this.param.hasOwnProperty("code")) {
-                this.set_c("code", this.param["code"])
-                document.location.href = `http://${this.dowindow_hf}/index.html?xianwan=${xianwan}${cccsssd}`;
-            } else {
-                if (this.get_c("code")) {
-                    this.param["code"] = this.get_c("code")
-                    this.createHome()
-                } else {
-                    var backurls = encodeURIComponent(`http://${this.dowindow_hf}/index.html?xianwan=${xianwan}`);
-                    return document.location.href = `${joinUrl}&redirect_uri=${backurls}&response_type=code&scope=snsapi_userinfo&state=${Math.random()}${cccsssd}`;
-                    //return document.location.href = `${joinUrl}?port=${this.sockprot}&url=${backurls}${cccsssd}`;
-                }
-            }
-        } else {
-            this.createHome()
-        }
+        this.wechatLogin();
     }
 
     private ingame_ok_click() {
