@@ -1,0 +1,40 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/assetsmanager/assetsmanager.js",
+		"libs/modules/dragonBones/dragonBones.js",
+		"libs/modules/game/game.js",
+		"libs/modules/tween/tween.js",
+		"libs/modules/socket/socket.js",
+		"libs/modules/promise/promise.js",
+		"libs/modules/jszip/jszip.js"
+	],
+	"game": [
+		"bin-debug/item_Msg.js",
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/Club.js",
+		"bin-debug/Commodity.js",
+		"bin-debug/DeskTable.js",
+		"bin-debug/DongHua.js",
+		"bin-debug/Head.js",
+		"bin-debug/Headmain.js",
+		"bin-debug/HeadPal.js",
+		"bin-debug/item_Creategroup.js",
+		"bin-debug/item_Gameinfo.js",
+		"bin-debug/item_gamelist.js",
+		"bin-debug/Buttontowicon.js",
+		"bin-debug/Li.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/Main.js",
+		"bin-debug/NewImage.js",
+		"bin-debug/Platform.js",
+		"bin-debug/Pokey.js",
+		"bin-debug/QGWES.js",
+		"bin-debug/Setting.js",
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/Timer.js",
+		"bin-debug/UserMain.js"
+	]
+}
