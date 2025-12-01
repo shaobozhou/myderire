@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DeskTableSkin" currentState="Desk2" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="Desk2,Desk3,Desk4" >
+	<w:Config id="19a7e911627" ></w:Config>
+	<e:Image height="100" scale9Grid="23,31,225,52" left="0" right="0" left.Desk2="20" right.Desk2="20" left.Desk3="20" right.Desk3="20" left.Desk4="20" right.Desk4="20" source.Desk2="DeskTop2_png" source.Desk3="DeskTop3_png" source.Desk4="DeskTop4_png"/>
+	<e:Label  text.Desk2="双人对战" horizontalCenter.Desk2="0" y.Desk2="22" size.Desk2="55" stroke.Desk2="2" strokeColor.Desk2="0x173591" text.Desk3="三人对战" horizontalCenter.Desk3="0" y.Desk3="22" size.Desk3="55" stroke.Desk3="2" strokeColor.Desk3="0x173591" text.Desk4="四人对战" horizontalCenter.Desk4="0" y.Desk4="22" size.Desk4="55" stroke.Desk4="2" strokeColor.Desk4="0x173591"/>
+	<e:Image  source="Desk2_png" scaleX="1.5" scaleY="1.5" y.Desk2="99" y.Desk3="99" source.Desk3="Desk3_png" y.Desk4="99" source.Desk4="Desk4_png"/>
+</e:Skin>

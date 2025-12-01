@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CommoditySkin" width="380" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="19a82a32a85" ></w:Config>
+	<e:Image  source="bar_game_no_bg_png" left="0" right="0" top="0" bottom="76" scaleX="2" scaleY="2" alpha="0.5"/>
+	<e:Image  source="hzmj_hall_head_bottom1_png" width="340" y="377" x="20"/>
+	<e:Image horizontalCenter="0" y="140" scaleX="1.7" scaleY="1.7" source="{__CommodityUrl}"/>
+	<e:Rect horizontalCenter="0" y="80" width="300" height="4" ellipseWidth="4" ellipseHeight="4" fillAlpha="0.5"/>
+	<e:Label textAlign="center" verticalAlign="bottom" horizontalCenter="0" y="20" size="40" textColor="0xddfff1" text="{__CommodityName}" height="45"/>
+	<e:Label horizontalCenter="0" y="315" text="{__CoinsNumber}" size="45" textColor="0xffcd6b"/>
+	<e:Rect horizontalCenter="0" y="403" width="260" height="45" fillAlpha="0.6" ellipseWidth="20" ellipseHeight="20"/>
+	<e:Image y="408" x="66" width="35" height="35" source="{__Paymenttype}"/>
+	<e:Label verticalAlign="middle" y="415" text="{__PaymentMoney}" size="28" textColor="0xffce96" x="95" height="30" width="190" textAlign="center"/>
+</e:Skin>

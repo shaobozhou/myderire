@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HeadPalSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="UserMain" >
+	<w:Config id="199f7cb27f7" ></w:Config>
+	<e:Image id="headimg" includeIn="UserMain" source="nohead_png" width="90" height="90" x="18" y="7" mask="{mmopen_mask}"/>
+	<e:Rect id="mmopen_mask"  width.UserMain="90" height.UserMain="90" ellipseWidth.UserMain="90" ellipseHeight.UserMain="90" x.UserMain="18" y.UserMain="7"/>
+	<e:Image  source.UserMain="ermj_hall_userHeadBg2_png"/>
+	<e:Image  includeIn=""/>
+	<e:Image  source.UserMain="ermj_hallGoldBg_png" y.UserMain="35" x.UserMain="118" scaleX.UserMain="0.8" scaleY.UserMain="0.8" width.UserMain="220"/>
+	<e:Image  x.UserMain="120" y.UserMain="36" source.UserMain="icon_jb_1_png" width.UserMain="30" height.UserMain="30"/>
+	<e:Label id="username"  x.UserMain="120" y.UserMain="10" text.UserMain="姓名" size.UserMain="22" textColor.UserMain="0xd4a57f" width.UserMain="170"/>
+	<e:Label id="usercoins"  x.UserMain="150" y.UserMain="40" text.UserMain="123456" size.UserMain="22" textColor.UserMain="0xddd47f"/>
+</e:Skin>

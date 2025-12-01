@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="skins.ButtonSkin" states="up,down,disabled" xmlns:e="http://ns.egret.com/eui" xmlns:egret="egret.*">
+    <e:Image id="iconDisplay" width="100%" height="100%" width.down="97%" height.down="97%"/>
+	<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"  bold="true" stroke="1" strokeColor="0x777777"/>
+</e:Skin>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.RadioButtonSkin" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" xmlns:e="http://ns.egret.com/eui">
+    <e:Image fillMode="scale" alpha="1" alpha.disabled="0" alpha.down="0"
+                
+                 alpha.upAndSelected="1"
+                 alpha.downAndSelected="0.7"
+                 alpha.disabledAndSelected="0.5" source="brtb_new_png" alpha.up="0" left="-20" right="-50" top="-15" bottom="-15"/>
+        <e:BitmapLabel id="labelDisplay" font="TitleBit_fnt" scaleX="0.8" scaleY="0.8" verticalCenter="0" horizontalCenter="0"/>
+</e:Skin>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="item_Headlist" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+    <ns1:Head currentState="Clubhead" C_Headimg="{data.headimg}" scaleX="0.9" scaleY="0.9"/>
+</e:Skin>

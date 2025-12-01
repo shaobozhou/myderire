@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DongHuaSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="17fa70dfd24" ></w:Config>
+	<e:Group id="__show" left="0" right="0" top="0" bottom="0">
+		<e:Rect fillAlpha="0.3" left="0" right="0" top="0" bottom="0"/>
+		<e:Label text="动画" left="0" right="0" top="0" bottom="0" width="60" height="30"/>
+	</e:Group>
+</e:Skin>

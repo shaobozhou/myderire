@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HeadSkin" width="150" height="150" currentState="MeString" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" states="MeString,Gameinfo,Clubhead,Userinfo">
+    <w:Config id="19a8d536787" ></w:Config>
+    <e:Image mask="{MaskRect}" source="{__Headimg}" left="15" right="15" top="15" bottom="15" left.Gameinfo="5" right.Gameinfo="5" bottom.Gameinfo="5" top.Gameinfo="5" left.Clubhead="10" right.Clubhead="10" bottom.Clubhead="10" top.Clubhead="10" left.Userinfo="8" right.Userinfo="8" bottom.Userinfo="8" top.Userinfo="8"/>
+    <e:Image source="HeadBack_png" left="0" right="0" top="0" bottom="0" source.Gameinfo="defaultRound_png"  source.Clubhead="seat_head_01_png" source.Userinfo="userinfo_png"/>
+    <e:Rect id="MaskRect" ellipseWidth="30" ellipseHeight="30" ellipseWidth.Gameinfo="140" ellipseHeight.Gameinfo="140"  left="15" top="15" right="15" bottom="15" left.Gameinfo="5" right.Gameinfo="5" bottom.Gameinfo="5" top.Gameinfo="5" left.Clubhead="10" right.Clubhead="10" bottom.Clubhead="10" top.Clubhead="10" ellipseWidth.Clubhead="30" ellipseHeight.Clubhead="30" left.Userinfo="8" right.Userinfo="8" bottom.Userinfo="8" top.Userinfo="8"/>
+</e:Skin>

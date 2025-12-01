@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="item_Gameuserdata" width="200" height="210" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+    <e:Label text="{data.win}" horizontalCenter="0" top="10" size="28" textColor="{data.wincolor}" />
+    <ns1:Head C_Headimg="{data.headimgurl}" currentState="Gameinfo" scaleX="0.8" scaleY="0.8"
+              horizontalCenter="0" verticalCenter="0" />
+    <e:Label text="{data.id}" horizontalCenter="0" bottom="0" textColor="0xffffff" />
+</e:Skin>

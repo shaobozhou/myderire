@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="item_MsgSkin" width="710" height="150" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="19a97795132" ></w:Config>
+	<e:Image source="ermj_hallGoldBg_png" scale9Grid="28,11,169,12" left="5" right="5" top="5" bottom="5"/>
+	<ns1:Head C_Headimg="{data.headimg}" currentState="Userinfo" width="120" height="120" verticalCenter="0" x="30"/>
+	<e:Label x="160" y="35" width="210" text="{data.id}"/>
+	<e:Label x="160" y="90" text="{data.nickname}" width="210" height="30"/>
+	<e:Label x="570" text="已接受" height="30" verticalCenter="0" textColor="0xa5a5a5"/>
+	<e:Button icon="Z_jujuedianji_png" x="400" verticalCenter="0" scaleX="0.8" scaleY="0.8" name="B_MsgList_no"/>
+	<e:Button icon="Z_tongyi (2)_png" x="555" verticalCenter="0" scaleX="0.8" scaleY="0.8" name="B_MsgList_yes"/>
+</e:Skin>

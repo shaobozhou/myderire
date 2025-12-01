@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ClubSkin" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="19a917b34c1" ></w:Config>
+	<e:Image source="backimg_png" left="1" right="-1" top="0" bottom="0" scale9Grid="15,85,147,510"/>
+	<e:Image width="125" height="135" x="30" source="{Headimg}"/>
+	<e:Image horizontalCenter="0" height="140" scale9Grid="259,15,274,91" width="1086" source="hhdz_hall_roomBg3_png" bottom="-5"/>
+	<e:Image horizontalCenter="0" height="140" source="hhdz_hall_roomBg1_png" scale9Grid="259,15,274,91" width="1086" y="-2"/>
+	<e:Label x="160" y="22" text="{Clubid}" width="180" textAlign="left" textColor="0xfff500"/>
+	<e:Label x="160" y="80" text="{Clubname}" width="180" textAlign="left" height="30" size="22" verticalAlign="middle" textColor="0xffffff"/>
+	<e:Image  source="bar_game_no_bg_png" horizontalCenter="0" y="70" width="300" height="50" name="B_Coins"/>
+	<e:Image source="icon_jb_1_png" x="395" width="40" height="40" y="77" touchEnabled="false"/>
+	<e:Label y="74" size="25" textColor="0xffca00" text="{Clubcoins}" textAlign="center" verticalAlign="middle" height="40" anchorOffsetX="0" width="290" x="395" touchEnabled="false"/>
+	<e:Button right="70" scaleX="2" scaleY="2" y="15" name="B_backhome"  icon="hhdz_game_menuBtn_png"/>
+	<e:Image y="140" left="10" right="10" height="130" source="bar_public_box_png"/>
+	<e:Group x="60" y="1802" width="960">
+		<e:Button id="MsgButton" scaleX="2" scaleY="2" name="G_Msg" icon="hhdz_hall_msg2Btn_png" x="0" y="0"/>
+		<e:Button scaleX="2" scaleY="2" icon="hhdz_game_gameBtn_png" x="130" y="0" name="G_Creategame"/>
+		<e:Button scaleX="2" scaleY="2" name="G_Gameset" icon="hhdz_hall_setBtn_png" x="650" y="0"/>
+		<e:Button scaleX="2" scaleY="2" name="G_Record" icon="hhdz_hall_infoBtn_png" x="520" y="0"/>
+		<e:Button scaleX="2" scaleY="2" name="G_Announcement" icon="hhdz_hall_recordBtn_png" x="390" y="0"/>
+		<e:Button scaleX="2" scaleY="2" name="G_Clubcoins" icon="hhdz_hall_coinsBtn_png" x="400" y="10"/>
+		<e:Button scaleX="2" scaleY="2" name="G_Peoples" icon="hhdz_hall_peopleBtn_png" x="260" y="0"/>
+		<e:Button scaleX="2" scaleY="2" name="G_Meinfo" icon="hhdz_hall_meBtn_png" x="140" y="10"/>
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	
+	<e:Scroller x="18" y="147" width="1045" height="115" scrollPolicyH="off">
+	    <e:List/>
+	</e:Scroller>
+
+	<e:Scroller x="10" y="280" width="1060" height="1500" scrollPolicyH="off">
+	    <e:List/>
+	</e:Scroller>
+	<e:Group id="G_Tipmenu" bottom="170" x="235">
+	    <e:Image/>
+	</e:Group>
+	<e:Group id="G_Maxwindows" left="0" right="0" top="0" bottom="0" visible="false">
+	    <e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6" name="B_Close"/>
+	    <e:Group horizontalCenter="0" verticalCenter="0" width="930" height="1580" anchorOffsetX="465" anchorOffsetY="790" name="G_Msg" visible="false">
+		    <e:Image left="0" right="0" top="0" bottom="0" source="bar_rooms_bg_v_png"/>
+			<e:BitmapLabel font="TitleBit_fnt" text="群消息" horizontalCenter="0" y="30"/>
+			<e:Button y="0" icon="bar_publice_btn_close_png" scaleX="2" scaleY="2" x="744" name="B_Close"/>
+			<e:Image source="bar_public_box_png" width="710" height="1160" y="140" x="110"/>
+			<e:Scroller x="110" y="140" width="710" height="1160">
+			    <e:List itemRenderer="item_Msg" itemRendererSkinName="item_MsgSkin">
+						<e:ArrayCollection>
+							<e:Array>
+								<e:Object dd="null"/>
+							</e:Array>
+						</e:ArrayCollection>
+					</e:List>
+			</e:Scroller>
+			<e:Group y="1305" height="160" width="930" x="0">
+			    <e:Button icon="common_btn_blue_png" label="全部接受" name="B_Putallyes"/>
+				<e:Button icon="common_btn_yellow_png" x="10" y="10" label="全部拒绝" name="B_Putallno"/>
+				<e:layout>
+					<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="68"/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+		<e:Group name="G_Creategame" anchorOffsetX="540" anchorOffsetY="430" height="860" x="540" y="960" visible="false">
+		    <e:Image source="brtb_help_bg_v_png" scaleX="1.5" scaleY="1.5" y="0"/>
+			<e:BitmapLabel font="TitleBit_fnt" text="创建游戏" horizontalCenter="0" y="15" scaleX="0.8" scaleY="0.8"/>
+			<e:Button y="0" icon="bar_publice_btn_close_png" scaleX="2" scaleY="2" x="983" name="B_Close"/>
+			<e:RadioButton x="70" y="130" width="275" height="70" label="七鬼五二三" selected="true"/>
+			<e:Rect x="105" y="235" width="200" height="2" fillAlpha="0.7"/>
+			<e:RadioButton x="70" y="260" width="275" height="70" label="钓红点"/>
+			<e:Rect x="105" y="355" width="200" height="2" fillAlpha="0.7"/>
+			<e:Scroller x="365" y="100" width="640" height="695">
+			    <e:Group scaleX="1.5" scaleY="1.5">
+					<ns1:DeskTable currentState="Desk2"  scaleX="0.8" scaleY="0.8"/>
+					<ns1:DeskTable currentState="Desk3"  scaleX="0.8" scaleY="0.8"/>
+					<ns1:DeskTable currentState="Desk4"  scaleX="0.8" scaleY="0.8"/>
+					<e:layout>
+						<e:VerticalLayout horizontalAlign="center" gap="46" />
+					</e:layout>
+				</e:Group>
+			</e:Scroller>
+		</e:Group>
+		<e:Group name="B_Gameset" anchorOffsetX="540" x="540" width="1080" anchorOffsetY="306" verticalCenter="0" visible="false">
+			<e:Image scaleX="1.7" scaleY="1.7" y="0" source="brtb_set_bg_png" left="0" right="0" height="360"/>
+			<e:BitmapLabel font="TitleBit_fnt" text="群组设置" horizontalCenter="0" y="15" scaleX="0.8" scaleY="0.8"/>
+			<e:Button y="0" icon="bar_publice_btn_close_png" scaleX="2" scaleY="2" x="983" name="B_Close"/>
+			<e:Label y="130" x="120" text="可玩游戏:" textColor="0x000000" size="35"/>
+			<e:Label y="210" x="120" text="可玩游戏:" textColor="0x000000" size="35"/>
+			<e:ToggleButton skinName="skins.CheckBoxSkin" label="七鬼五二三" icon="dcpk_checkbox_off_png" x="340" y="120" scaleX="1.2" scaleY="1.2" selected="true"/>
+			<e:ToggleButton  x="650" y="120" label="钓红点" skinName="skins.CheckBoxSkin" icon="dcpk_checkbox_off_png" scaleX="1.2" scaleY="1.2" selected="true">
+			</e:ToggleButton>
+		</e:Group>
+		<e:Group horizontalCenter="0" verticalCenter="0" width="930" height="1580" anchorOffsetX="465" anchorOffsetY="790" name="G_Record" visible="false">
+		    <e:Image left="0" right="0" top="0" bottom="0" source="bar_rooms_bg_v_png"/>
+			<e:BitmapLabel font="TitleBit_fnt" text="游戏记录" horizontalCenter="0" y="30"/>
+			<e:Button y="0" icon="bar_publice_btn_close_png" scaleX="2" scaleY="2" x="744" name="B_Close"/>
+			<e:Image source="bar_public_box_png" width="720" height="1330" y="140" x="110"/>
+			<e:Scroller x="115" y="145" width="710" height="1315">
+			    <e:List itemRenderer="item_Gameinfo" itemRendererSkinName="item_GameinfoSkin">
+						<e:ArrayCollection>
+							<e:Array>
+								<e:Object dd="null"/>
+							</e:Array>
+						</e:ArrayCollection>
+					</e:List>
+			</e:Scroller>
+			<e:Image source="bar_rooms_bg2_v_png" y="1392" x="183" touchEnabled="false"  width="711" height="152"/>
+		</e:Group>
+		<e:Group name="G_Announcement" anchorOffsetX="540" x="540" width="1080" anchorOffsetY="306" verticalCenter="0" visible="false">
+			<e:Image scaleX="1.7" scaleY="1.7" y="0" source="brtb_set_bg_png" left="0" right="0" height="360"/>
+			<e:BitmapLabel font="TitleBit_fnt" text="群公告" horizontalCenter="0" y="15" scaleX="0.8" scaleY="0.8"/>
+			<e:Button y="0" icon="bar_publice_btn_close_png" scaleX="2" scaleY="2" x="983" name="B_Close"/>
+			<e:Image source="bar_public_box_png" width="890" height="350" y="110" x="100"/>
+			<e:EditableText x="110" y="120" width="870" height="330" textAlign="center" verticalAlign="middle" multiline="true"/>
+			<e:Group y="480" width="880" horizontalCenter="0">
+				<e:Button icon="brtb_btn_blue_png" x="0" y="0"/>
+				<e:Button icon="brtb_btn_red_png" x="0" y="0"/>
+				<e:layout>
+					<e:HorizontalLayout horizontalAlign="center" gap="122"/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+		<e:Group horizontalCenter="0" verticalCenter="0" width="930" height="1580" anchorOffsetX="465" anchorOffsetY="790" name="G_Clubcoins" visible="false">
+		    <e:Image left="0" right="0" top="0" bottom="0" source="bar_rooms_bg_v_png"/>
+			<e:BitmapLabel font="TitleBit_fnt" text="群金库" horizontalCenter="0" y="30"/>
+			<e:Button y="0" icon="bar_publice_btn_close_png" scaleX="2" scaleY="2" x="744" name="B_Close"/>
+			<e:Image source="bar_public_box_png" width="720" height="1200" y="260" x="110"/>
+			<e:Scroller x="115" y="265" width="710" height="1190">
+			    <e:List itemRenderer="item_Gameinfo" itemRendererSkinName="item_GameinfoSkin">
+						<e:ArrayCollection>
+							<e:Array>
+								<e:Object dd="null"/>
+							</e:Array>
+						</e:ArrayCollection>
+					</e:List>
+			</e:Scroller>
+			<e:Image source="bar_rooms_bg2_v_png" y="1392" x="183" touchEnabled="false"  width="711" height="152"/>
+		</e:Group>
+		<e:Group horizontalCenter="0" verticalCenter="0" width="930" height="1580" anchorOffsetX="465" anchorOffsetY="790" name="G_Peoples" visible="false">
+		    <e:Image left="0" right="0" top="0" bottom="0" source="bar_rooms_bg_v_png"/>
+			<e:BitmapLabel font="TitleBit_fnt" text="群成员" horizontalCenter="0" y="30"/>
+			<e:Button y="0" icon="bar_publice_btn_close_png" scaleX="2" scaleY="2" x="744" name="B_Close"/>
+			<e:Image source="bar_public_box_png" width="720" height="1325" y="140" x="110"/>
+			<e:Scroller x="115" y="145" width="710" height="1315">
+			    <e:List itemRenderer="item_Gameinfo" itemRendererSkinName="item_GameinfoSkin">
+						<e:ArrayCollection>
+							<e:Array>
+								<e:Object dd="null"/>
+							</e:Array>
+						</e:ArrayCollection>
+					</e:List>
+			</e:Scroller>
+			<e:Image source="bar_rooms_bg2_v_png" y="1392" x="183" touchEnabled="false"  width="711" height="152"/>
+		</e:Group>
+
+		<e:Group name="G_Meinfo" anchorOffsetX="540" x="540" width="1080" anchorOffsetY="306" verticalCenter="0">
+			<e:Image scaleX="1.7" scaleY="1.7" y="0" source="brtb_set_bg_png" left="0" right="0" height="360"/>
+			<e:BitmapLabel font="TitleBit_fnt" text="个人信息" horizontalCenter="0" y="15" scaleX="0.8" scaleY="0.8"/>
+			<e:Button y="0" icon="bar_publice_btn_close_png" scaleX="2" scaleY="2" x="983" name="B_Close"/>
+			<e:Image source="bar_public_box_png" width="890" height="350" y="110" x="100"/>
+			<e:EditableText x="110" y="120" width="870" height="330" textAlign="center" verticalAlign="middle" multiline="true"/>
+			<e:Group y="480" width="880" horizontalCenter="0">
+			<e:Button icon="brtb_btn_blue_png" x="0" y="0"/>
+			<e:Button icon="brtb_btn_red_png" x="0" y="0"/>
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" gap="122"/>
+			</e:layout>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+	
+</e:Skin>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="QGWESSkin" width="1080" height="1920" currentState="player4" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="player4,player3,player2">
+	<w:Config id="19a98e4d0c2"></w:Config>
+	<e:Image source="room_4_png" left="0" right="0" top="0" bottom="0" source.player3="room_3_png"
+	         source.player2="room_2_png" name="O_Deskimg" />
+	<e:Button icon="requirement_btn_png" right="925" top="0" name="B_backtohome" />
+	<e:Group id="Headmainlist" left="0" right="0" top="0" bottom="0" name="44" touchThrough="true">
+		<ns1:Headmain x="50" y="1770" currentState="Game_me" scaleX="0.8" scaleY="0.8" name="H_0" touchEnabled="true"
+		              touchChildren="false"  C_UID="100000"/>
+		<ns1:Headmain y="150" x="690" scaleX="0.8" scaleY="0.8" name="H_1" touchChildren="false" touchEnabled="true"  C_UID="100001"/>
+		<ns1:Headmain y="460" scaleX="0.8" scaleY="0.8" x="65" name="H_2" touchChildren="false" touchEnabled="true"  C_UID="100002"/>
+		<ns1:Headmain y="460" scaleX="0.8" scaleY="0.8" x="855" name="H_3" touchChildren="false" touchEnabled="true"  C_UID="100003"/>
+	</e:Group>
+	<ns1:Buttontowicon icon="common_btn_yellow_png" icon2="slice_btn2_png" x="419" y="1350" name="B_sendpokey" />
+	<e:Group id="Userpokeys" left="0" right="0" top="0" bottom="0" touchThrough="true">
+		<e:Group id="Mepokeys" y="1510" horizontalCenter="0" touchThrough="true" width="900" height="250">
+			<ns1:Pokey scaleY="0.6" scaleX="0.6" anchorOffsetX="150" anchorOffsetY="208" />
+			<ns1:Pokey scaleY="0.5" scaleX="0.5" anchorOffsetX="150" anchorOffsetY="208" x="156" y="0" />
+			<ns1:Pokey scaleY="0.5" scaleX="0.5" anchorOffsetX="150" anchorOffsetY="208" x="311" y="0" />
+			<ns1:Pokey scaleY="0.5" scaleX="0.5" anchorOffsetX="150" anchorOffsetY="208" x="465" y="0" />
+			<ns1:Pokey scaleY="0.5" scaleX="0.5" anchorOffsetX="150" anchorOffsetY="208" x="621" y="0" />
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="bottom" horizontalAlign="center" />
+			</e:layout>
+		</e:Group>
+		<e:Group y="155" touchEnabled="false" right="400">
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" x="0" y="0" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" x="50" y="0" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" x="100" y="0" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" x="150" y="0" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" x="200" y="0" />
+			<e:layout>
+				<e:HorizontalLayout gap="-80" />
+			</e:layout>
+		</e:Group>
+		<e:Group x="62" top="650" touchEnabled="false">
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" rotation="90" anchorOffsetX="150" anchorOffsetY="208" y="0" x="0" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" rotation="90" anchorOffsetX="150" anchorOffsetY="208" x="0" y="50" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" rotation="90" anchorOffsetX="150" anchorOffsetY="208" x="0" y="100" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" rotation="90" anchorOffsetX="150" anchorOffsetY="208" x="0" y="150" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" rotation="90" anchorOffsetX="150" anchorOffsetY="208" x="0" y="200" />
+			<e:layout>
+				<e:VerticalLayout gap="-80" />
+			</e:layout>
+		</e:Group>
+		<e:Group x="850" top="650" touchEnabled="false">
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" rotation="90" anchorOffsetX="150" anchorOffsetY="208" x="0" y="0" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" rotation="90" anchorOffsetX="150" anchorOffsetY="208" x="0" y="50" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" rotation="90" anchorOffsetX="150" anchorOffsetY="208" x="0" y="100" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" rotation="90" anchorOffsetX="150" anchorOffsetY="208" x="0" y="150" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" rotation="90" anchorOffsetX="150" anchorOffsetY="208" x="0" y="200" />
+			<e:layout>
+				<e:VerticalLayout gap="-80" />
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="Pokeymian" left="0" right="0" top="0" bottom="0" touchThrough="true" name="22">
+		<ns1:Pokey scaleY="0.3" scaleX="0.3" anchorOffsetX="150" anchorOffsetY="208" y="700" x="540" />
+	</e:Group>
+	<e:Group id="Pushpokeys" left="0" right="0" top="0" bottom="0" touchEnabled="false">
+		<e:Group y="1330" horizontalCenter="0" width="780">
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="0" x="0" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="10" x="10" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="20" x="20" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="30" x="30" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="0" x="0" />
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" gap="5" />
+			</e:layout>
+		</e:Group>
+		<e:Group y="325" horizontalCenter="0" width="280">
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="0" x="0" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="10" x="10" />
+			<e:layout>
+				<e:HorizontalLayout gap="-80" horizontalAlign="center" />
+			</e:layout>
+		</e:Group>
+		<e:Group x="230" y="650" height="280" width="168">
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" rotation="90" anchorOffsetX="150" anchorOffsetY="208" x="0" y="0" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" rotation="90" anchorOffsetX="150" anchorOffsetY="208" x="30" y="30" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" rotation="90" anchorOffsetX="150" anchorOffsetY="208" x="10" y="10" />
+			<e:layout>
+				<e:VerticalLayout gap="-80" verticalAlign="middle" />
+			</e:layout>
+		</e:Group>
+		<e:Group x="680" y="650" height="280">
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" rotation="90" anchorOffsetX="150" anchorOffsetY="208" x="0" y="0" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" rotation="90" anchorOffsetX="150" anchorOffsetY="208" x="10" y="10" />
+			<ns1:Pokey scaleY="0.4" scaleX="0.4" rotation="90" anchorOffsetX="150" anchorOffsetY="208" x="40" y="40" />
+			<e:layout>
+				<e:VerticalLayout gap="-80" verticalAlign="middle" />
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="Downmian" y="950" width="840" horizontalCenter="0" touchThrough="true" name="11">
+		<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="0" x="0" currentState="110" />
+		<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="50" x="50" currentState="110" />
+		<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="60" x="60" currentState="110" />
+		<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="70" x="70" currentState="110" />
+		<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="80" x="80" currentState="110" />
+		<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="90" x="90" currentState="110" />
+		<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="190" x="190" currentState="110" />
+		<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="160" x="160" currentState="110" />
+		<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="170" x="170" currentState="110" />
+		<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="180" x="180" currentState="110" />
+		<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="190" x="190" currentState="110" />
+		<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="200" x="200" currentState="110" />
+		<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="210" x="210" currentState="110" />
+		<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="220" x="220" currentState="110" />
+		<ns1:Pokey scaleY="0.4" scaleX="0.4" anchorOffsetX="150" anchorOffsetY="208" y="230" x="230" currentState="110" />
+		<e:layout>
+			<e:TileLayout verticalGap="1" orientation="rows" horizontalAlign="center" verticalAlign="middle"
+			              requestedColumnCount="26" columnWidth="30" columnAlign="justifyUsingWidth" />
+		</e:layout>
+	</e:Group>
+	<e:Group id="Menugroup" right="65" height="80" top="0" width="110">
+		<e:Image source="more_down_png" name="B_Topmenus" left="0" right="0" top="0" bottom="0" scale9Grid="60,40,8,1" />
+		<e:Group x="54" y="37" width="270" height="368" visible="false">
+			<e:Button skinName="ButtonMenu" label="更换房间" x="0" y="0" width="268" height="80" name="B_Changeroom" />
+			<e:Button skinName="ButtonMenu" label="游戏记录" x="10" y="10" width="268" height="80" name="B_Gamedata" />
+			<e:Button skinName="ButtonMenu" label="游戏规则" x="20" y="20" width="268" height="80" name="B_Gamesite" />
+			<e:Button skinName="ButtonMenu" label="房间信息" x="30" y="30" width="268" height="80" name="B_Gamesite" />
+			<e:layout>
+				<e:VerticalLayout/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="Jipaiqi" y="1780" x="330" width="700" height="110" touchEnabled="false">
+		<e:Image source="count_bg_png" left="0" right="0" top="0" bottom="0" />
+		<e:Label text="1" bottom="30" x="15" width="40" textAlign="center" textColor="0x000000" />
+		<e:Label text="1" bottom="30" x="60" width="40" textAlign="center" textColor="0x000000" />
+		<e:Label text="4" bottom="30" x="105" width="40" textAlign="center" textColor="0x000000" />
+		<e:Label text="4" bottom="30" x="150" width="40" textAlign="center" textColor="0x000000" />
+		<e:Label text="4" bottom="30" x="195" width="40" textAlign="center" textColor="0x000000" />
+		<e:Label text="4" bottom="30" x="240" width="40" textAlign="center" textColor="0x000000" />
+		<e:Label text="4" bottom="30" x="285" width="40" textAlign="center" textColor="0x000000" />
+		<e:Label text="4" bottom="30" x="330" width="40" textAlign="center" textColor="0x000000" />
+		<e:Label text="4" bottom="30" x="375" width="40" textAlign="center" textColor="0x000000" />
+		<e:Label text="4" bottom="30" x="420" width="40" textAlign="center" textColor="0x000000" />
+		<e:Label text="4" bottom="30" x="465" width="40" textAlign="center" textColor="0x000000" />
+		<e:Label text="4" bottom="30" x="510" width="40" textAlign="center" textColor="0x000000" />
+		<e:Label text="4" bottom="30" x="555" width="40" textAlign="center" textColor="0x000000" />
+		<e:Label text="4" bottom="30" x="600" width="40" textAlign="center" textColor="0x000000" />
+		<e:Label text="4" bottom="30" x="645" width="40" textAlign="center" textColor="0x000000" />
+	</e:Group>
+	<ns1:Timer currentState="{currentState}" y="1420" anchorOffsetX="55" anchorOffsetY="55" x="175" />
+	<e:Group id="Biaoqing" width="320" y="1520" height="245" x="50"
+	        >
+		<e:Image source="useInfo_bag_png" left="0" right="0" top="0" bottom="0" />
+		<e:Label y="182" text="ID:" x="20" textColor="0xffedc1" size="35" />
+		<e:Label y="182" text="123456" x="75" textColor="0xFFEDC1" size="35" />
+		<e:Group left="10" right="10" scrollEnabled="true" top="7" bottom="83">
+			<e:Button icon="beer_png" name="E_beer" scaleX="0.6" scaleY="0.6" width="116" height="78" />
+			<e:Button icon="boom_png" name="E_boom" x="10" y="10" scaleX="0.6" scaleY="0.6" width="116" height="78" />
+			<e:Button icon="egg_png" name="E_egg" x="20" y="20" scaleX="0.6" scaleY="0.6" width="116" height="78" />
+			<e:Button icon="grab_png" name="E_grab" x="30" y="30" scaleX="0.6" scaleY="0.6" width="116" height="78" />
+			<e:Button icon="handshake_png" name="E_handshake" x="40" y="40" scaleX="0.6" scaleY="0.6" width="116" height="78" />
+			<e:Button icon="kiss_png" name="E_kiss" x="50" y="50" scaleX="0.6" scaleY="0.6" width="116" height="78" />
+			<e:Button icon="rose_png" name="E_rose" x="60" y="60" scaleX="0.6" scaleY="0.6" width="116" height="78" />
+			<e:Button icon="soap_png" name="E_soap" x="70" y="70" scaleX="0.6" scaleY="0.6" width="116" height="78" />
+			<e:Button icon="tomato_png" name="E_tomato" x="80" y="80" scaleX="0.6" scaleY="0.6" width="116" height="78" />
+			<e:Button icon="zan_png" name="E_zan" x="90" y="90" scaleX="0.6" scaleY="0.6" width="116" height="78" />
+			<e:Button icon="love_png" name="E_love" x="100" y="100" scaleX="0.6" scaleY="0.6" width="116" height="78" />
+			<e:layout>
+				<e:TileLayout/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="AnimationS" left="0" right="0" top="0" bottom="0" touchEnabled="false">
+	</e:Group>
+	<e:Group left="0" right="0" top="0" bottom="0" visible="false">
+		<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6" name="B_Closewin" />
+		<e:Group horizontalCenter="0" verticalCenter="0" width="900" height="810" visible="false">
+			<e:Image left="0" right="0" top="0" bottom="0" source="private_bg_dlg_png" scaleX="1.5" scaleY="1.5"
+			         scale9Grid="35,71,627,292" />
+			<e:Label horizontalCenter="0" text="游戏规则" y="15" size="40" />
+			<e:Button icon="new_chacha_png" right="0" scaleY="1.2" scaleX="1.2" name="B_Closewin" />
+			<e:Scroller x="40" y="90" height="670" width="820" scrollPolicyH="off">
+				<e:Group x="40" y="0">
+					<e:Label text="七鬼五二三是一款流行于多地的民间扑克游戏，通常用 1 副 54 张牌，适配 2 - 4 人游玩，核心玩法是通过合理出牌赢取计分牌，最终以得分定胜负，详细规则如下：" width="820" x="0"
+					         y="0" textColor="0xffffff" lineSpacing="10" />
+					<e:Label text="1. 核心设定" width="820" x="0" y="120" bold="true" size="35" textColor="0xffffff" />
+					<e:Label text="     牌型大小:" x="0" y="170" textColor="0xFFFFFF" bold="true" size="30" />
+					<e:Label text="单牌的特殊大小排序是 7＞大王＞小王＞5＞2＞3＞A＞K＞Q＞J＞10＞9＞8＞6＞4；同点数不同花色的牌，按黑桃＞红桃＞梅花＞方块排序。牌型间大小为单张＜对子＜三张＜四张，且只有同类型牌才可比较大小。"
+					         x="195" y="170" textColor="0xFFFFFF" size="30" lineSpacing="10" width="620" />
+					<e:Label text="游戏中的计分牌为 5、10、K，其中 5 代表 5 分，10 和 K 各代表 10 分，整副牌计分牌合计 100 分。每轮中出最大牌的玩家，可获取本轮内所有计分牌，游戏结束后统计总分。"
+					         x="195" y="380" textColor="0xFFFFFF" size="30" width="620" lineSpacing="10" />
+					<e:Label text="     计分规则:" x="0" y="380" textColor="0xFFFFFF" bold="true" size="30" />
+					<e:Label text="2. 基础牌型" width="820" x="0" y="540" bold="true" size="35" textColor="0xFFFFFF" />
+					<e:Image source="shuoming_png" x="40" y="590" width="770" />
+					<e:Label text="3. 游戏流程" width="820" x="0" y="1160" bold="true" size="35" textColor="0xFFFFFF" />
+					<e:Label text="发牌:" y="1210" textColor="0xFFFFFF" bold="true" size="30" right="660" />
+					<e:Label text="洗牌后给每位玩家发 5 张牌，游戏无盟友，玩家各自为战。" x="170" y="1210" textColor="0xFFFFFF" size="30" width="640"
+					         lineSpacing="10" />
+					<e:Label text="首轮出牌:" y="1295" textColor="0xFFFFFF" bold="true" size="30" right="660" />
+					<e:Label text="由手上持有最小牌的玩家先出牌，可出包含这张最小牌在内的任意合法牌型。" x="170" y="1295" textColor="0xFFFFFF" size="30" width="640"
+					         lineSpacing="10" />
+					<e:Label text="轮流出牌:" y="1385" textColor="0xFFFFFF" bold="true" size="30" right="660" />
+					<e:Label text="后续玩家按顺时针顺序出牌，要么不出（pass），要么出比上一位玩家更大的同类型牌。若玩家手中有可出的计分牌，不可弃牌藏分，必须出牌。" x="170" y="1385"
+					         textColor="0xFFFFFF" size="30" width="640" lineSpacing="10" />
+					<e:Label text="补牌与下轮:" y="1515" textColor="0xFFFFFF" bold="true" size="30" right="660" />
+					<e:Label text="当除出牌者外其余人都 pass，或有人出尽手中牌时，本轮结束。此时本轮出最大牌的玩家优先补牌至 5 张，其他玩家再依次补牌到 5 张，随后由该玩家开启下一轮出牌。" x="170" y="1515"
+					         textColor="0xFFFFFF" size="30" width="640" lineSpacing="10" />
+					<e:Label text="游戏结束:" y="1680" textColor="0xFFFFFF" bold="true" size="30" right="660" />
+					<e:Label text="当牌堆里所有牌都被摸完且出完后，游戏结束。最终统计所有玩家的得分，得分最高的玩家获胜；部分玩法中，若所有牌发完且任意一家出完手牌，也会结束游戏，剩余手牌作废处理。" x="170" y="1680"
+					         textColor="0xFFFFFF" size="30" width="640" lineSpacing="10" />
+				</e:Group>
+			</e:Scroller>
+		</e:Group>
+		<e:Group horizontalCenter="0" verticalCenter="0" width="900" height="810" visible="false">
+			<e:Image left="0" right="0" top="0" bottom="0" source="private_bg_dlg_png" scaleX="1.5" scaleY="1.5"
+			         scale9Grid="35,71,627,292" />
+			<e:Label horizontalCenter="0" text="游戏记录" y="15" size="40" />
+			<e:Button icon="new_chacha_png" right="0" scaleY="1.2" scaleX="1.2" name="B_Closewin" />
+			<e:Scroller x="40" y="84" width="825" height="685">
+				<e:List itemRendererSkinName="item_gamelistSkin" />
+			</e:Scroller>
+		</e:Group>
+	</e:Group>
+</e:Skin>

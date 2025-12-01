@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="item_GameinfoSkin" width="820" height="300" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="19a8d536797"></w:Config>
+	<e:Image source="bar_game_no_bg_png" left="0" right="0" top="0" bottom="5" alpha="0.7" />
+	<e:Label x="20" text="房间ID:" bottom="240"/>
+	<e:Label x="120" width="120" textAlign="center" height="31" text="{data.roomid}" textColor="0xffe76d" bottom="240" />
+	<e:Label text="{data.gameStr}" horizontalCenter="0" size="40" bottom="240" textColor="0xa3ff2d" bold="true" />
+	<e:Label text="{data.timeTemp}" right="20" bottom="240" />
+	<e:Scroller width="778" x="22" height="210" y="70" scrollPolicyV="off">
+		<e:List dataProvider="{data.datapol}" itemRendererSkinName="item_Gameuserdata">
+			<e:layout>
+				<e:HorizontalLayout gap="30" />
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+</e:Skin>

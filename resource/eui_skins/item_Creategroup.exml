@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="item_CreategroupSkin" width="820" height="220" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="19a865de420" ></w:Config>
+	<e:Image source="bar_game_no_bg_png" left="0" right="0" top="0" bottom="5" alpha="0.7"/>
+	<e:Label x="10" verticalCenter="0" text="{data.ID}" width="120" textAlign="center"/>
+	<ns1:Head verticalCenter="0" x="140" C_Headimg="{data.Head}" width="168" height="168" currentState="Clubhead"/>
+	<e:Label x="330" verticalCenter="0" text="{data.Name}" width="240" size="35" textAlign="center"/>
+	<e:Label x="590" verticalCenter="0" text="{data.Length}" width="120" size="35" textAlign="center"/>
+	<e:Label x="720" verticalCenter="0" text="{data.Game}" width="90" size="35" textAlign="center" textColor="0xffea54"/>
+</e:Skin>

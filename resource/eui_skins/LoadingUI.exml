@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoadingUISkin" width="1080" height="1920" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Rect  left="0" right="0" top="0" bottom="0" fillColor="0xffffff"/>
+    <e:Label id="LabelPal"  horizontalCenter="0" verticalCenter="-50"/>
+    <e:ProgressBar id="ProgressBarPal"  skinName="skins.ProgressBarSkin" horizontalCenter="0" verticalCenter="0" width="500" height="30" value="10"/>
+</e:Skin>

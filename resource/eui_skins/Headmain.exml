@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HeadmainSkin" width="200" height="220" currentState="Game_oth" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="Game_oth,Game_me"  height.Game_me="130" width.Game_me="330">
+	<w:Config id="19a9d5aafa8" ></w:Config>
+	<ns1:Head y="0" currentState="Clubhead" width="130" height="130" x.Game_me="0" y.Game_me="0" x.Game_oth="35"/>
+	<e:BitmapLabel id="_Gamedispat" font="byb_fnt_beishu1Big_fnt" text="" horizontalCenter.Game_oth="0" horizontalCenter.Game_me="-100" y="-50"/>
+	<e:Image y="118" height="102" source="time_frame_bg_png" scale9Grid="64,25,68,4" width="215" x="-20" x.Game_me="103" y.Game_me="15"/>
+	<e:Image source="icon_jb_1_png" y="133" width="30" height="30" x="5" y.Game_me="30" x.Game_me="140" x.Game_oth="15"/>
+	<e:Label y="133" width="190" height="30" text="123" textAlign="center" textColor="0xffcd0f" y.Game_me="30" x.Game_me="135" x.Game_oth="5"/>
+	<e:Rect x="10" y="175" width="170" height="2" fillAlpha="0.3" x.Game_me="136" y.Game_me="65" y.Game_oth="170" x.Game_oth="15"/>
+	<e:Label y="180" text="ajsbs" y.Game_me="75" x.Game_me="135" width.Game_me="190" textAlign.Game_me="center" width.Game_oth="200" textAlign.Game_oth="center"/>
+	<ns1:DongHua id="playDispat" y.Game_oth="65" x.Game_me="65" y.Game_me="45" x.Game_oth="100"/>
+</e:Skin>

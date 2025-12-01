@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.CheckBoxSkin" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" xmlns:e="http://ns.egret.com/eui">
+    <e:Group width="100%" height="100%">
+        <e:layout>
+            <e:HorizontalLayout verticalAlign="middle"/>
+        </e:layout>
+        <e:Image id="iconDisplay" 
+                 alpha="1" 
+                 alpha.disabled="0.5" 
+                 alpha.down="0.7"
+                 alpha.disabledAndSelected="0.5"
+                 source="dcpk_checkbox_off_png"
+                 source.upAndSelected="dcpk_checkbox_on_png"
+                 source.downAndSelected="dcpk_checkbox_on_png"
+                 source.disabledAndSelected="dcpk_checkbox_on_png"
+                 />
+        <e:Label id="labelDisplay" 
+                 size="32"
+                 textColor="0x707070"
+                 textColor.upAndSelected="0x700000"
+                 textColor.downAndSelected="0x700000"
+                 textColor.disabledAndSelected="0x700000"
+                 textAlign="center" 
+                 verticalAlign="middle"
+                  bold="true"/>
+    </e:Group>
+</e:Skin>

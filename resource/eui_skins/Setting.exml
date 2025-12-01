@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SettingSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="17fd0b5dcff"></w:Config>
+	<e:Label text="音乐" size="45" y="0" textColor="0x822900"/>
+	<e:HSlider id="_YingYue_h" skinName="skins.HSliderSkin"
+	           maximum="10" minimum="0" pendingValue="1"  y="0" right="0" left="110"/>
+	<e:Label text="音效" size="45" textColor="0x822900" top="110"/>
+	<e:HSlider id="_YingXiao_h" skinName="skins.HSliderSkin"
+	           maximum="10" minimum="0" pendingValue="1"  right="0" left="110" top="110"/>
+</e:Skin>

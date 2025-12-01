@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TimerSkin" width="110" height="110" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*"  states="player4,player3,player2" >
+	<w:Declarations>
+		<tween:TweenGroup id="playtime">
+			<tween:TweenItem target="{T_image}">
+				<tween:Set>
+					<tween:props>
+						<e:Object visible="{true}"/>
+					</tween:props>
+				</tween:Set>
+				<tween:To duration="1000">
+					<tween:props>
+						<e:Object rotation="{-359}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<w:Config id="19a9be872cc" ></w:Config>
+	<e:Image left="0" right="0" top="0" bottom="0" source="timer_4_png" source.player3="timer_3_png" source.player2="timer_2_png"/>
+	<e:Label id="T_label" text="99" horizontalCenter="0" verticalCenter="0" size="50" textColor="0xffffff" textAlign="center"/>
+	<e:Image id="T_image" source="Bright_png" width="110" height="110" anchorOffsetX="55" anchorOffsetY="55" horizontalCenter="0" verticalCenter="0" visible.player4="false"/>
+</e:Skin>

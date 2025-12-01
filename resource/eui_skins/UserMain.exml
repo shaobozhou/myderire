@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="UserMainSkin" width="1080" height="1920" xmlns:ns1="*" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="199f68d9f4c"></w:Config>
+	<e:Image source="ermj_hall_bg_v_png" left="0" right="0" top="0" bottom="0" />
+	<e:Image source="ermj_hallTopBg_v_png" anchorOffsetY="0" x="0" scaleX="1.5" scaleY="1.5" />
+	<ns1:HeadPal scaleX="1.5" scaleY="1.5" />
+	<e:Button scaleX="1.5" scaleY="1.5" right="20" top="10" name="B_Yonghu" icon="ermj_hallBtnHelp_png" />
+	<e:Button right="150" scaleX="1.5" scaleY="1.5" top="10" name="B_Shezhi" icon="ermj_hallBtnBack_png" />
+	<e:Button right="280" scaleX="1.5" scaleY="1.5" top="10" name="B_Jilu" icon="ermj_hallBtnRecord_png"/>
+	<ns1:DongHua PlayDisplay="ermj_effect_room1" PlaySrc="newAnimation" ske_json="ermj_effect_room1_ske_json"
+	             tex_png="ermj_effect_room1_tex_png" tex_json="ermj_effect_room1_tex_json" scaleX="1.7" scaleY="1.7"
+	             x="750" y="770" name="B_DDiaohongdian" touchChildren="false" touchEnabled="true" />
+	<ns1:DongHua PlayDisplay="ermj_effect_room2" PlaySrc="newAnimation" ske_json="ermj_effect_room2_ske_json"
+	             tex_png="ermj_effect_room2_tex_png" tex_json="ermj_effect_room2_tex_json" scaleX="1.7" scaleY="1.7"
+	             name="B_DQiguiwuersan" touchChildren="false" touchEnabled="true" x="320" y="450" />
+	<ns1:DongHua y="1200" PlayDisplay="ermj_effect_room3" PlaySrc="newAnimation" ske_json="ermj_effect_room3_ske_json"
+	             tex_png="ermj_effect_room3_tex_png" tex_json="ermj_effect_room3_tex_json" scaleX="1.7" scaleY="1.7"
+	             x="340" name="B_DShangcheng" touchChildren="false" touchEnabled="true" />
+	<ns1:DongHua y="1620" PlayDisplay="ermj_effect_room4" PlaySrc="newAnimation" ske_json="ermj_effect_room4_ske_json"
+	             tex_png="ermj_effect_room4_tex_png" tex_json="ermj_effect_room4_tex_json" scaleX="1.7" scaleY="1.7"
+	             x="750" name="B_DPengyouquan" touchChildren="false" touchEnabled="true" />
+	<e:Group left="0" right="0" top="0" bottom="0" name="G_Maxwins">
+		<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6" name="B_Close" />
+
+		<e:Group height="1640" name="G_Kuaisuyouxi" horizontalCenter="0" verticalCenter="0" touchThrough="true" visible="false">
+			<e:Image source="ermj_hall_roomBg_v_png" scaleX="1.5" scaleY="1.7" fillMode="clip" left="0" right="0" top="0"
+			         bottom="0" />
+			<e:Button x="882" y="20" scaleX="1.5" scaleY="1.5" name="B_Close" icon="close_btn (4)_png" />
+			<e:BitmapLabel id="Pri_TitleBit" font="TitleBit_fnt" text="" y="48" horizontalCenter="0" />
+			<e:Scroller id="Scrollers1" left="95" right="95" top="153" bottom="123" scrollPolicyH="off">
+				<e:Group id="DeskList" scaleX="1.5" scaleY="1.5">
+					<ns1:DeskTable currentState="Desk2"  name="T_Tabel0"/>
+					<ns1:DeskTable currentState="Desk3"  name="T_Tabel1"/>
+					<ns1:DeskTable currentState="Desk4"  name="T_Tabel2"/>
+					<e:layout>
+						<e:VerticalLayout horizontalAlign="center" gap="46" />
+					</e:layout>
+				</e:Group>
+			</e:Scroller>
+		</e:Group>
+
+		<e:Group anchorOffsetX="540" anchorOffsetY="810" name="G_Shangdian" verticalCenter="60" horizontalCenter="0"
+		        >
+			<e:Image source="bar_rooms_bg_v_png" scaleX="1.5" scaleY="1.5" />
+			<e:Button scaleX="2.5" scaleY="2.5" x="860" name="B_Close" icon="bar_publice_btn_close_png" />
+			<e:BitmapLabel font="TitleBit_fnt" text="商城" scaleX="1.2" scaleY="1.2" y="21" x="462" />
+			<e:Scroller id="Scrollers2" width="840" x="120" height="1355" y="150">
+				<e:Group>
+					<ns1:Commodity C_CommodityName="创建群组" C_PaymentMoney="10000" C_CommodityUrl="t0103b70713af4661b4_png"
+					               C_Paymenttype="1" name="B_Commodity" />
+					<ns1:Commodity C_CommodityName="记牌器" C_PaymentMoney="1000" C_CommodityUrl="HallRooms03Ani03_png" C_Paymenttype="1"
+					               x="10" y="10" name="B_Commodity" />
+					<ns1:Commodity C_CommodityName="20000金币" C_PaymentMoney="6.00" C_CommodityUrl="icon_jb_3_png" C_Paymenttype="0"
+					               x="20" y="20" C_CoinsNumber="20000" name="B_Commodity" />
+					<ns1:Commodity C_CommodityName="66000金币" C_PaymentMoney="18.00" C_CommodityUrl="icon_jb_4_png" C_Paymenttype="0"
+					               x="30" y="30" C_CoinsNumber="66000" name="B_Commodity" />
+					<ns1:Commodity C_CommodityName="130000金币" C_PaymentMoney="30.00" C_CommodityUrl="icon_jb_5_png" C_Paymenttype="0"
+					               x="40" y="40" C_CoinsNumber="130000" name="B_Commodity" />
+					<ns1:Commodity C_CommodityName="600000金币" C_PaymentMoney="128.00" C_CommodityUrl="icon_jb_6_png" C_Paymenttype="0"
+					               x="50" y="50" C_CoinsNumber="600000" name="B_Commodity" />
+					<ns1:Commodity C_CommodityName="1800000金币" C_PaymentMoney="328.00" C_CommodityUrl="icon_jb_7_png" C_Paymenttype="0"
+					               x="60" y="60" C_CoinsNumber="1800000" name="B_Commodity" />
+					<e:layout>
+						<e:TileLayout horizontalAlign="center" verticalAlign="middle" columnAlign="justifyUsingGap" verticalGap="30" />
+					</e:layout>
+				</e:Group>
+			</e:Scroller>
+			<e:Image source="bar_rooms_bg2_v_png" scaleX="1.5" scaleY="1.5" y="1426" x="213" touchEnabled="false" />
+		</e:Group>
+
+		<e:Group anchorOffsetX="463" anchorOffsetY="252" name="G_Shezhi" verticalCenter="60" horizontalCenter="0"
+		         visible="false">
+			<e:Image scaleX="1.5" scaleY="1.5" source="brtb_set_bg_png" />
+			<e:Button scaleX="2" scaleY="2" name="B_Close" x="830" y="20" icon="bar_publice_btn_close_png" />
+			<e:BitmapLabel font="TitleBit_fnt" text="设置" scaleX="0.8" scaleY="0.8" y="10" horizontalCenter="0" />
+			<ns1:Setting width="700" horizontalCenter="0" height="136" verticalCenter="0" />
+		</e:Group>
+
+		<e:Group anchorOffsetX="463" anchorOffsetY="252" name="G_Yonghu" verticalCenter="60" horizontalCenter="0" visible="false">
+			<e:Image scaleX="1.5" scaleY="1.5" source="brtb_set_bg_png" />
+			<e:Button scaleX="2" scaleY="2" name="B_Close" x="830" y="20" icon="bar_publice_btn_close_png" />
+			<e:BitmapLabel font="TitleBit_fnt" text="用户" scaleX="0.8" scaleY="0.8" y="10" horizontalCenter="0" />
+			<ns1:Head x="230" y="120" C_Headimg="nohead_png" />
+			<e:Label y="130" text="等级：" textColor="0x000000" right="250" />
+			<e:Label y="210" text="游戏次数：" textColor="0x000000" right="250" />
+			<e:Label y="290" text="游戏胜率：" textColor="0x000000" right="250" />
+			<e:Label y="370" text="可用金币：" textColor="0x000000" right="250" />
+			<e:Group x="103" y="130" width="750">
+				<e:Label x="0" y="180" text="ID:1234567" width="400" textAlign="center" textColor="0xa55f00" />
+				<e:Label text="用户用户用户用户用户" size="35" anchorOffsetX="0" width="400" textAlign="center" textColor="0x664300" y="247"
+				         x="0" />
+				<e:Label y="0" text="1级" textColor="0x000000" x="577" />
+				<e:Label y="80" text="0" textColor="0x000000" x="577" />
+				<e:Label y="160" text="0" textColor="0x000000" x="577" />
+				<e:Label y="240" text="0" textColor="0xcc9900" x="577" />
+			</e:Group>
+		</e:Group>
+
+		<e:Group anchorOffsetX="540" anchorOffsetY="810" name="G_Quanzu" verticalCenter="60" horizontalCenter="0" visible="false">
+			<e:Image source="bar_rooms_bg_v_png" scaleX="1.5" scaleY="1.5" />
+			<e:Button scaleX="2.5" scaleY="2.5" x="860" name="B_Close" icon="bar_publice_btn_close_png" />
+			<e:BitmapLabel font="TitleBit_fnt" text="群组列表" scaleX="1.2" scaleY="1.2" y="21" x="384" />
+			<e:Group x="120" y="128" width="840" height="55" anchorOffsetY="0">
+				<e:Rect ellipseWidth="20" ellipseHeight="20" fillAlpha="0.5" left="0" right="0" top="0" bottom="0" />
+				<e:Label text="ID" x="50" verticalCenter="0" />
+				<e:Label text="头像" x="200" verticalCenter="0" />
+				<e:Label text="名称" x="430" verticalCenter="0" />
+				<e:Label text="人数" x="630" verticalCenter="0" />
+				<e:Label text="游戏中" x="730" verticalCenter="0" />
+			</e:Group>
+			<e:Image source="bar_public_box_png" y="180" width="840" height="1200" x="120"/>
+			<e:Scroller id="Scrollers3" width="820" height="1180" y="190" x="130" scrollPolicyH="off">
+				<e:List itemRendererSkinName="item_CreategroupSkin" itemRenderer="item_Creategroup" name="L_CreategroupScroller">
+					<e:ArrayCollection id="CreategroupArray">
+						<!-- e:Object ID="12345" Head="nohead_png" Name="战" Length="100" Game="0"/ -->
+					</e:ArrayCollection>
+				</e:List>
+			</e:Scroller>
+			<e:Group y="1375" width="760" x="160">
+				<e:Button scaleX="1.5" scaleY="1.5" width="243" height="95" name="B_Chuangjian">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="common_btn_blue_png" source.down="common_btn_blue_png" />
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+							<e:Image source="add_btn_png" source.down="add_btn_png" width="168" height="45" horizontalCenter="0"
+							         verticalCenter="1" />
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button scaleX="1.5" scaleY="1.5" width="243" height="95" right="0">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+							<e:Image width="100%" height="100%" source="common_btn_yellow_png" source.down="common_btn_yellow_png" />
+							<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+							<e:Image source="slice_btn_png" source.down="slice_btn_png" width="168" height="45" horizontalCenter="0"
+							         verticalCenter="1" />
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+			</e:Group>
+			<e:Image source="bar_rooms_bg2_v_png" scaleX="1.5" scaleY="1.5" y="1426" x="213" touchEnabled="false" visible="false" />
+		</e:Group>
+
+		<e:Group anchorOffsetX="540" anchorOffsetY="810" name="G_Jilu" verticalCenter="60" horizontalCenter="0"
+		         visible="false">
+			<e:Image source="bar_rooms_bg_v_png" scaleX="1.5" scaleY="1.5" />
+			<e:Button scaleX="2.5" scaleY="2.5" x="860" name="B_Close" icon="bar_publice_btn_close_png" />
+			<e:BitmapLabel font="TitleBit_fnt" text="游戏记录" scaleX="1.2" scaleY="1.2" y="21" x="384" />
+			<e:Image source="bar_public_box_png" x="120" y="140" width="840" height="1360"/>
+			<e:Scroller id="Scrollers4" width="820" height="1340" y="150" x="130" scrollPolicyH="off">
+				<e:List id="GameinfoScroller" itemRendererSkinName="item_GameinfoSkin" itemRenderer="item_Gameinfo">
+					<e:ArrayCollection id="GameinfoArray">
+						<!-- e:Object ID="12345" Head="nohead_png" Name="战" Length="100" Game="0"/ -->
+					</e:ArrayCollection>
+				</e:List>
+			</e:Scroller>
+			<e:Image source="bar_rooms_bg2_v_png" scaleX="1.5" scaleY="1.5" y="1426" x="213" touchEnabled="false" />
+		</e:Group>
+	</e:Group>
+	<e:Group left="0" right="0" top="0" bottom="0" name="G_Wininfo" visible="false">
+	    <e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6" name="B_CloseWin"/>
+		
+	    <e:Group anchorOffsetX="465" anchorOffsetY="280" name="G_AddClub" height="560" horizontalCenter="0" verticalCenter="0" width="930">
+			<e:Image scaleX="1.5" scaleY="1.5" source="brtb_set_bg_png"  scale9Grid="215,76,187,218" anchorOffsetY="0" left="0" right="0" top="0" bottom="0"/>
+			<e:Button scaleX="2" scaleY="2" name="B_CloseWin" x="830" y="20" icon="bar_publice_btn_close_png"/>
+			<e:BitmapLabel font="TitleBit_fnt" text="创建群组" scaleX="0.7" scaleY="0.7" y="14" horizontalCenter="0" />
+			<e:Image y="110" source="bar_public_box_png" height="300" width="706" x="110"/>
+			<ns1:Head id="Clubheadpat" y="120" C_Headimg="zq1_jpg"  currentState="Clubhead" name="B_ChangeHead" horizontalCenter="0" touchChildren="false" touchEnabled="true"/>
+			<e:Label y="280" text="更改头像"  textColor="0x191200" name="B_ChangeHead" horizontalCenter="0"/>
+			<e:Label y="350" text="群组名称：" textColor="0x000000"  x="153"/>
+			<e:Image source="bar_game_no_bg_png" y="343" x="300" width="470" height="40"/>
+			<e:EditableText id="Clubnamepat" x="310" y="346" height="35" width="445"/>
+			<e:Group y="425" width="706" horizontalCenter="0">
+			    <e:Button horizontalCenter="-150" scaleX="1.2" scaleY="1.2" name="B_CloseWin"  icon="brtb_btn_red_png"/>
+				<e:Button horizontalCenter="150" scaleX="1.2" scaleY="1.2" name="B_Chuangjian_OK" icon="brtb_btn_blue_png"/>
+			</e:Group>
+			<e:Group id="HeadSelectPal" left="90" right="90" top="100" bottom="60" visible="false">
+			    <e:Image source="brtb_game_history_bg_v_png" scale9Grid="9,7,195,198" left="0" right="0" top="0" bottom="0"/>
+				<e:Scroller id="Scrollers5" left="15" right="15" top="15" bottom="15">
+				<e:List id="HeadSelectScroller" itemRendererSkinName="item_Headlist">
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object headimg="zq1_jpg"/>
+							<e:Object headimg="zq2_jpg"/>
+							<e:Object headimg="zq3_jpg"/>
+							<e:Object headimg="zq4_jpg"/>
+							<e:Object headimg="zq5_jpg"/>
+							<e:Object headimg="zq6_jpg"/>
+							<e:Object headimg="zq7_jpg"/>
+							<e:Object headimg="zq8_jpg"/>
+							<e:Object headimg="zq9_jpg"/>
+							<e:Object headimg="zq10_jpg"/>
+							<e:Object headimg="zq11_jpg"/>
+							<e:Object headimg="zq12_jpg"/>
+							<e:Object headimg="zq13_jpg"/>
+							<e:Object headimg="zq14_jpg"/>
+							<e:Object headimg="zq15_jpg"/>
+							<e:Object headimg="zq16_jpg"/>
+							<e:Object headimg="zq17_jpg"/>
+							<e:Object headimg="zq18_jpg"/>
+							<e:Object headimg="zq19_jpg"/>
+							<e:Object headimg="zq20_jpg"/>
+							<e:Object headimg="zq21_jpg"/>
+							<e:Object headimg="zq22_jpg"/>
+							<e:Object headimg="zq23_jpg"/>
+							<e:Object headimg="zq24_jpg"/>
+							<e:Object headimg="zq25_jpg"/>
+						</e:Array>
+					</e:ArrayCollection>
+					<e:layout>
+						<e:TileLayout rowAlign="justifyUsingGap" columnAlign="justifyUsingGap"/>
+					</e:layout>
+				</e:List>
+				</e:Scroller>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+	<e:Group id="InfoGroup" horizontalCenter="0" y="1760" height="60" width="750" visible="false">
+		<e:Image source="hzmj_game_recordTitleLine_png" scale9Grid="351,17,79,11" left="0" right="0" top="0" bottom="0" />
+		<e:Label horizontalCenter="0" verticalCenter="0" text="SACASC" textColor="0x000000" />
+	</e:Group>
+</e:Skin>
